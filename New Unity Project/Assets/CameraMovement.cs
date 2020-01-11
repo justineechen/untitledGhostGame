@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,19 +19,31 @@ public class CameraMovement : MonoBehaviour
     {
         // print("hello");
         // Debug.Log("helo");
-        if (Input.GetKey("up")){
+
+        if (Input.GetKeyDown("up")){
             print("up arrow key is held down");
             // moveToPosition = new Vector3 (0, 2, -0.01f);
+            Move(6.7f, 1.6f, -2.2f);
             moveToPosition = new Vector3 (6.7f, 1.6f, -2.2f);
             transform.position = Vector3.Lerp (transform.position, moveToPosition, speed);
-            
         }
 
-        if (Input.GetKey("down")){
-            print("down arrow key is held down");
-            rotateValue = new Vector3(0,180,0);
-            transform.eulerAngles = transform.eulerAngles - rotateValue;
-        }
+        // if (Input.GetKey("down")){
+        //     print("down arrow key is held down");
+        //     rotateValue = new Vector3(0,180,0);
+        //     transform.eulerAngles = transform.eulerAngles - rotateValue;
+        // }
         
+    }
+
+    // Position determined from currCylinder (Global.currCylinder.transform.position).
+
+    void Move(Vector3 position)
+    {
+        float x = position[0];
+        float y = position[1];
+        float z = position[2];
+        moveToPosition = new Vector3(x, y, z);
+        transform.position = Vector3.Lerp(transform.position, moveToPosition, 0.8f);
     }
 }
