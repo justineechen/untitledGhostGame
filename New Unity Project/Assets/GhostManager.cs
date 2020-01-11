@@ -53,6 +53,26 @@ public class GhostManager : MonoBehaviour
             
             success = CylinderThree();
         }
+        else if (currentCylinder == "cylinder4"){
+            // print("cur is 3");
+            
+            success = CylinderThree();
+        }
+        else if (currentCylinder == "cylinder5"){
+            // print("cur is 3");
+            
+            success = CylinderThree();
+        }
+        else if (currentCylinder == "cylinder6"){
+            // print("cur is 3");
+            
+            success = CylinderThree();
+        }
+        else if (currentCylinder == "cylinder7"){
+            // print("cur is 3");
+            
+            success = CylinderThree();
+        }
         if (success){
             timerScript.reset = true;
             cameraMovementScript.Move(GameObject.Find(currentCylinder).transform.position);
@@ -71,8 +91,8 @@ public class GhostManager : MonoBehaviour
 
     bool CylinderOne(){
         // print("in cylinderr 1");
-        if (Input.GetKeyDown("space")){
-            // print("space key was pressed");
+        if (Input.GetKeyDown("q")){
+            print("q key");
             currentCylinder = "cylinder2";
             return true;
         }
@@ -80,20 +100,48 @@ public class GhostManager : MonoBehaviour
     }
 
     bool CylinderTwo(){
-        if (Input.GetKeyDown("up")){
+        if (Input.GetKeyDown("d")){
             // print("up key was pressed");
+            print("d key");
             currentCylinder = "cylinder3";
-             print("YOU WIN!");
             return true;
         }
         return false;
     }
 
     bool CylinderThree(){
-        if (Input.GetKeyDown("down")){
+        if (Input.GetKeyDown("z")){
             // print("down key was pressed");
-            currentCylinder = "cylinder1";
-           
+            print("z key");
+            currentCylinder = "cylinder4";
+            return true;
+        }
+        return false;
+    }
+    bool CylinderFour(){
+        if (Input.GetKeyDown("e")){
+            // print("down key was pressed");
+            print("e key");
+            currentCylinder = "cylinder5";
+            return true;
+        }
+        return false;
+    }
+        bool CylinderFive(){
+        if (Input.GetKeyDown("s")){
+            // print("down key was pressed");
+            print("s key");
+            currentCylinder = "cylinder6";
+            return true;
+        }
+        return false;
+    }
+        bool CylinderSix(){
+        if (Input.GetKeyDown("w")){
+            // print("down key was pressed");
+            print("w key");
+            currentCylinder = "cylinder7";
+            print("YOU WIN!");
             return true;
         }
         return false;
