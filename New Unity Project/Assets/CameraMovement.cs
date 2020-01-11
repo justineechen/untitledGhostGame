@@ -34,4 +34,13 @@ public class CameraMovement : MonoBehaviour
         }
         
     }
+    
+    void Move(Vector3 position)
+    {
+        float x = position[0];
+        float y = position[1];
+        float z = position[2];
+        moveToPosition = new Vector3(x, y, z);
+        transform.position = Vector3.Lerp(transform.position, moveToPosition, 0.8f);
+    }
 }
