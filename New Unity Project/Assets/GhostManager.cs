@@ -5,10 +5,7 @@ using UnityEngine;
 public class GhostManager : MonoBehaviour
 {   
     public String[] cylinders = {"cylinder1", "cylinder2", "cylinder3"};
-    boolean reset 
-    timer 
     private timer timerScript = GetComponent<timer.cs>();
-    
     var timerStart = timerScript.reset;
     var success = False;
     public String currentCylinder;
@@ -38,7 +35,6 @@ public class GhostManager : MonoBehaviour
             if (success){
                 //Moving to the next cylinder                
                 success = False;
-
             }
         }
         if (!success){

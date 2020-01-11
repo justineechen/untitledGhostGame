@@ -21,6 +21,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {	
+		print(t.ToString("f1"));
 		if (reset == true){
 			reset = false;
 			startTime = Time.time;

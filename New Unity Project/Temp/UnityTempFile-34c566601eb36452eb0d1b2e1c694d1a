@@ -1,11 +1,14 @@
 /target:library
 /nowarn:0169
-/out:"Temp/Assembly-CSharp.dll"
+/out:"Temp/Unity.Analytics.DataPrivacy.dll"
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
+/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+/reference:"Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll"
+/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -67,28 +70,14 @@
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEditor.dll"
-/reference:"Library/ScriptAssemblies/Unity.Timeline.Editor.dll"
-/reference:"Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.VSCode.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
-/reference:"Library/ScriptAssemblies/UnityEngine.UI.dll"
-/reference:"Library/ScriptAssemblies/Unity.Timeline.dll"
-/reference:"Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll"
-/reference:"Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll"
-/reference:"Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll"
-/reference:"Library/ScriptAssemblies/Unity.Rider.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll"
-/reference:"Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll"
-/reference:"Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll"
-/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
-/reference:"Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll"
-/reference:"Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll"
-/reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
-/reference:"Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
+/reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+/reference:"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
 /reference:"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
 /reference:"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
 /reference:"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
+/reference:"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -300,5 +289,6 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/CameraMovement.cs"
-"Assets/GhostManager.cs"
+"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/AssemblyInfo.cs"
+"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/DataPrivacy.cs"
+"/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/PackageCache/com.unity.analytics@3.3.2/DataPrivacy/DataPrivacyButton.cs"
