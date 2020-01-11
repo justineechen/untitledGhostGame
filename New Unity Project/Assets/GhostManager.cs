@@ -56,17 +56,17 @@ public class GhostManager : MonoBehaviour
         else if (currentCylinder == "cylinder4"){
             // print("cur is 3");
             
-            success = CylinderThree();
+            success = CylinderFour();
         }
         else if (currentCylinder == "cylinder5"){
             // print("cur is 3");
             
-            success = CylinderThree();
+            success = CylinderFive();
         }
         else if (currentCylinder == "cylinder6"){
             // print("cur is 3");
             
-            success = CylinderThree();
+            success = CylinderSix();
         }
         else if (currentCylinder == "cylinder7"){
             // print("cur is 3");
