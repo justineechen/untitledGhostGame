@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraMovement.cs" />
+     <Compile Include="Assets\GhostManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/justinechen/Desktop/csc404/untitledGhostGame/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
