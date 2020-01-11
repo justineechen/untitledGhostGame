@@ -9,13 +9,14 @@ public class timer : MonoBehaviour
 	public Text timerText;
 	private float startTime;
 	private float maxTime;
+	public float t;
 	public bool reset = false;
 
     // Start is called before the first frame update
     void Start()
     {
 		startTime = Time.time;
-		maxTime = 15;        
+		maxTime = 10;        
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class timer : MonoBehaviour
 			startTime = Time.time;
 		}
 		float elapsed = Time.time - startTime;
-		float t = Math.Max(maxTime - elapsed, 0);
+		t = Math.Max(maxTime - elapsed, 0);
 		timerText.text = t.ToString("f1");
     }
 }
