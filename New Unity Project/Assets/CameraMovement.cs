@@ -41,6 +41,10 @@ public class CameraMovement : MonoBehaviour
         float y = position[1];
         float z = position[2];
         moveToPosition = new Vector3(x, y, z);
-        transform.position = Vector3.Lerp(transform.position, moveToPosition, 0.8f);
+        transform.position = moveToPosition;
+    }
+
+    public void NewMove(Transform target) {
+        transform.LookAt(target);
     }
 }
